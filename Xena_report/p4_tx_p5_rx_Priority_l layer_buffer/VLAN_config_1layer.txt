@@ -1,0 +1,27 @@
+wrs_vlans --ep 0 --emode 1
+wrs_vlans --ep 1 --emode 1
+wrs_vlans --ep 2 --emode 1
+wrs_vlans --ep 3 --emode 1
+wrs_vlans --ep 4 --emode 1
+wrs_vlans --ep 5 --emode 1
+wrs_vlans --ep 6 --emode 1
+wrs_vlans --ep 7 --emode 1
+wrs_vlans --ep 8 --emode 1
+wrs_vlans --ep 9 --emode 1
+wrs_vlans --ep 10 --emode 1
+wrs_vlans --ep 11 --emode 1
+wrs_vlans --ep 12 --emode 1
+wrs_vlans --ep 13 --emode 1
+
+wrs_vlans --rvid 17 --rfid 17 --rmask 0x3ffff --rprio 7
+wrs_vlans --rvid 16 --rfid 16 --rmask 0x3ffff --rprio 6
+wrs_vlans --rvid 15 --rfid 15 --rmask 0x3ffff --rprio 5
+wrs_vlans --rvid 14 --rfid 14 --rmask 0x3ffff --rprio 4
+wrs_vlans --rvid 13 --rfid 13 --rmask 0x3ffff --rprio 3
+wrs_vlans --rvid 12 --rfid 12 --rmask 0x3ffff --rprio 2
+wrs_vlans --rvid 11 --rfid 11 --rmask 0x3ffff --rprio 1
+wrs_vlans --rvid 10 --rfid 10 --rmask 0x3ffff --rprio 0
+
+
+/etc/init.d/ppsi.sh stop
+/etc/init.d/monit.sh stop

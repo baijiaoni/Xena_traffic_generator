@@ -1,0 +1,189 @@
+{
+  "ChassisManager": {
+    "ChassisList": [
+      {
+        "Address": {
+          "HostName": "172.16.255.200",
+          "PortNumber": 22606,
+          "Password": "xena"
+        },
+        "ChassisIsDisconnected": false,
+        "DisplayName": "Chassis 0 'New chassis' (172.16.255.200)",
+        "ResourceIndex": 0,
+        "ItemId": "bb35db23-55b9-4266-b4ae-0b120288ca6f",
+        "ParentId": ""
+      }
+    ]
+  },
+  "TestBedHandler": {
+    "SelectedTestBedId": "62ab5de7-3a0d-4bbe-8bf8-bfdec32185bf",
+    "EntityList": [
+      {
+        "Description": "",
+        "UsedPorts": [
+          {
+            "ChassisId": "bb35db23-55b9-4266-b4ae-0b120288ca6f",
+            "ModuleIndex": 4,
+            "PortIndex": 4
+          },
+          {
+            "ChassisId": "bb35db23-55b9-4266-b4ae-0b120288ca6f",
+            "ModuleIndex": 4,
+            "PortIndex": 5
+          }
+        ],
+        "PollAwaysPorts": [],
+        "ZeroRateCheckPorts": [],
+        "ShowOnlyUsedPorts": false,
+        "PortGridPropertySelector": {
+          "ShowReadOnlyProperties": true,
+          "DisabledGroups": [],
+          "DisabledProperties": []
+        },
+        "StreamGridPropertySelector": {
+          "ShowReadOnlyProperties": true,
+          "DisabledGroups": [],
+          "DisabledProperties": []
+        },
+        "UsePortTxTimeForDuration": false,
+        "LoggingDefinition": {
+          "EnableLogging": false,
+          "EnabledFields": {
+            "TxBps": true,
+            "TxFps": true,
+            "TxBytes": true,
+            "TxFrames": true,
+            "RxBps": true,
+            "RxFps": true,
+            "RxBytes": true,
+            "RxFrames": true,
+            "RxFcsErrors": true,
+            "RxSeqErr": true,
+            "RxMisErr": true,
+            "RxPldErr": true,
+            "LatencyCurr": true,
+            "LatencyCurrMin": true,
+            "LatencyCurrMax": true,
+            "LatencyAvg": true,
+            "LatencyMin": true,
+            "LatencyMax": true,
+            "JitterCurr": true,
+            "JitterCurrMin": true,
+            "JitterCurrMax": true,
+            "JitterAvg": true,
+            "JitterMin": true,
+            "JitterMax": true
+          },
+          "LogScheduleSettings": {
+            "PollInterval": "00:00:01",
+            "LoggingPeriod": "01:00:00",
+            "RunUntilStopped": false,
+            "UseGlobalTrafficStartStop": false
+          },
+          "FileSettings": {
+            "LogFileType": "CSV",
+            "LogFileNamePrefix": "statslog",
+            "AppendTimestamp": true,
+            "SeparateRunDirs": true,
+            "UseRollOverFileSize": true,
+            "RollOverFileSize": 10000,
+            "UseMaxArchiveFiles": true,
+            "MaxArchiveFiles": 10,
+            "CompressArchiveFiles": true
+          },
+          "ItemId": "68a477cf-71e1-4333-851a-3ffdb26e8fcf",
+          "ParentId": "",
+          "DisplayName": ""
+        },
+        "StreamWizardDefinition": {
+          "TopologyHandler": {
+            "StreamTopology": "MESH",
+            "StreamDirection": "BIDIR",
+            "TidAllocationScope": "ConfigScope"
+          },
+          "PortHandler": {
+            "ResetPorts": true,
+            "PortConfigMap": {
+              "P_bb35db23-55b9-4266-b4ae-0b120288ca6f_4_4": {
+                "PortGroup": "UNDEFINED",
+                "SavedPropertyValueMap": {
+                  "P_COMMENT": "50,6F,72,74,20,6E,75,6D,62,65,72,20,34",
+                  "P_SPEEDSELECTION": "03"
+                },
+                "DisplayName": "Port 0 'Unknown'",
+                "ResourceIndex": 0,
+                "ItemId": "51379e13-c6c5-4643-8663-5bca58867ee7",
+                "ParentId": ""
+              },
+              "P_bb35db23-55b9-4266-b4ae-0b120288ca6f_4_5": {
+                "PortGroup": "UNDEFINED",
+                "SavedPropertyValueMap": {
+                  "P_COMMENT": "50,6F,72,74,20,6E,75,6D,62,65,72,20,35",
+                  "P_SPEEDSELECTION": "03"
+                },
+                "DisplayName": "Port 0 'Unknown'",
+                "ResourceIndex": 0,
+                "ItemId": "0d576b33-4853-4ac2-b2c9-b5ac02065974",
+                "ParentId": ""
+              }
+            },
+            "PortPeerRelations": {
+              "Relations": []
+            },
+            "UsedPortProperties": {
+              "EnabledGroups": [],
+              "EnabledProperties": [
+                "Description",
+                "SpeedSelection"
+              ]
+            }
+          },
+          "StreamHandler": {
+            "RemoveExistingStreams": true,
+            "ArpForGateways": true,
+            "StreamCountPerPort": 1,
+            "StreamConfigMap": {
+              "0": {
+                "SavedPropertyValueMap": {
+                  "PS_ENABLE": "01",
+                  "PS_COMMENT": "53,74,72,65,61,6D",
+                  "PS_PACKETHEADER": "00,00,00,00,00,00,00,00,00,00,00,00,FF,FF",
+                  "PS_HEADERPROTOCOL": "01",
+                  "PS_RATEFRACTION": "00,01,86,A0"
+                },
+                "DisplayName": "Stream 0/0",
+                "ResourceIndex": 0,
+                "ItemId": "da7165ef-ada7-4e70-9b5e-a40b416add6b",
+                "ParentId": ""
+              }
+            },
+            "UsedStreamProperties": {
+              "EnabledGroups": [],
+              "EnabledProperties": [
+                "Description",
+                "EnableState",
+                "TxRatePcnt"
+              ]
+            }
+          },
+          "ItemId": "ec646b29-95d2-465a-a618-f6a3d90936f9",
+          "ParentId": "",
+          "DisplayName": ""
+        },
+        "ChartingSettings": {
+          "ShowTrackBall": true,
+          "MaxSamples": 100,
+          "ChartDefinitions": []
+        },
+        "ItemId": "62ab5de7-3a0d-4bbe-8bf8-bfdec32185bf",
+        "ParentId": "",
+        "DisplayName": "Default testbed"
+      }
+    ]
+  },
+  "FormatVersion": 1,
+  "ApplicationVersion": "1.20 (1.20.5752.24808)",
+  "ItemId": "ac8b5b67-197d-41ca-8f0a-bad891eefac5",
+  "ParentId": "",
+  "DisplayName": ""
+}

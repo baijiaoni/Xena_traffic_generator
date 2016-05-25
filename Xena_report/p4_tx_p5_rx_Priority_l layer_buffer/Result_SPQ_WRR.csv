@@ -1,0 +1,45 @@
+Global Stream Statistics Counters:
+ID:
+  TxPortName,Port 0/4/4,Port 0/4/4,Port 0/4/4,Port 0/4/4,Port 0/4/4,Port 0/4/4,Port 0/4/4,Port 0/4/4
+  StreamId,0,1,2,3,4,5,6,7
+  RxPortName,Port 0/4/5,Port 0/4/5,Port 0/4/5,Port 0/4/5,Port 0/4/5,Port 0/4/5,Port 0/4/5,Port 0/4/5
+  TidValueString,7,9,11,12,13,14,15,16
+  Description,Stream number 0,Stream number 1,Stream number 2,Stream number 3,Stream number 4,Stream number 5,Stream number 6,Stream number 7
+TX Totals:
+  TxPercent,0,0,0,0,0,0,0,0
+  TxBpsL1,0,0,0,0,0,0,0,0
+  TxBpsL2,0,0,0,0,0,0,0,0
+  TxPps,0,0,0,0,0,0,0,0
+  TxBytes,2883666240,2883664992,2883664992,2883664992,2883664992,2883843456,2883972000,2883972000
+  TxPackets,2310630,2310629,2310629,2310629,2310629,2310772,2310875,2310875
+RX Totals:
+  RxPercent,0,0,0,0,0,0,0,0
+  RxBpsL1,0,0,0,0,0,0,0,0
+  RxBpsL2,0,0,0,0,0,0,0,0
+  RxPps,0,0,0,0,0,0,0,0
+  RxBytes,2883666240,2883664992,2883664992,2883664992,2883664992,2883843456,2883972000,2883972000
+  RxPackets,2310630,2310629,2310629,2310629,2310629,2310772,2310875,2310875
+RX Errors:
+  TxRxDiff,0,0,0,0,0,0,0,0
+  LostPackets,0,0,0,0,0,0,0,0
+  MisorderPackets,0,0,0,0,0,0,0,0
+  PayloadErrors,0,0,0,0,0,0,0,0
+  BitErrorRate,0,0,0,0,0,0,0,0
+RX Latency:
+  AggrMinLatency,2567,2832,2904,2976,3024,3096,3168,2832
+  AggrAvgLatency,19111,23823,58983,43316,98841,62806,138687,82297
+  AggrMaxLatency,27295,2522783,5038621,7544260,10060099,12565738,15081576,17587191
+  AggrLatencyRange,24728,2519951,5035717,7541284,10057075,12562642,15078408,17584359
+  CurrMinLatency,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+  CurrAvgLatency,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+  CurrMaxLatency,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+  CurrLatencyRange,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+RX Jitter:
+  AggrMinJitter,0,0,0,0,0,0,0,0
+  AggrAvgJitter,1,74,147,220,294,367,441,515
+  AggrMaxJitter,24655,2519927,5035693,7541260,10057050,12562617,15078359,17584311
+  AggrJitterRange,24655,2519927,5035693,7541260,10057050,12562617,15078359,17584311
+  CurrMinJitter,0,0,0,0,0,0,0,0
+  CurrAvgJitter,0,0,0,0,0,0,0,0
+  CurrMaxJitter,0,0,0,0,0,0,0,0
+  CurrJitterRange,0,0,0,0,0,0,0,0

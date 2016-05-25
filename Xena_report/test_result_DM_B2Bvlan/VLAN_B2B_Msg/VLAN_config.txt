@@ -1,0 +1,15 @@
+
+wrs_vlans --ep 3 --emode 1
+wrs_vlans --ep 4 --emode 1
+wrs_vlans --ep 5 --emode 1
+wrs_vlans --ep 6 --emode 1
+wrs_vlans --ep 7 --emode 1
+
+wrs_vlans --rvid 5 --rfid 5 --rmask 0xf8 --rprio 7
+wrs_vlans --rvid 6 --rfid 6 --rmask 0xf8 --rprio 0
+
+/etc/init.d/ppsi.sh stop
+/etc/init.d/monit.sh stop
+
+wrs_vlans --list
+wrs_vlans --elist

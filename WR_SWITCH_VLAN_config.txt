@@ -1,0 +1,48 @@
+--Configuration for WR switch VLAN
+
+--Step 1. Port configuration
+	--If port belongs to only one VLAN, please indicate the VLAN id
+	wrs_vlans --ep 4 --emode 1 --evid 5 
+	--If port belongs to more than one VLAN, there is no necessary to indicate VLAN id here
+	wrs_vlans --ep 4 --emode 1 
+	
+--Step 2. VLAN configuration
+	--No VLAN priority
+		--rmask (17 bits) indicates the ports, which belong to the VLAN. E.g. 0xf8 => port 4-8 belong to VLAN 5
+		--different vlan uses different rfid 
+		wrs_vlans --rvid 5 --rfid 5 --rmask 0xf8 
+	--With VLAN priority. E.g. VLAN 5 has priority 7
+		wrs_vlans --rvid 5 --rfid 5 --rmask 0xf8 --rprio 7
+
+--Simple example
+--WR switch port 0 belongs to VLAN 5
+--WR switch port 1 belongs to VLAN 6
+--WR switch port 2 belongs to VLAN 7
+--WR switch port 3 belongs to VLAN 5,6,7
+
+wrs_vlans --ep 0 --emode 1 --evid 5 
+wrs_vlans --ep 1 --emode 1 --evid 6 
+wrs_vlans --ep 2 --emode 1 --evid 7 
+wrs_vlans --ep 3 --emode 1 
+wrs_vlans --rvid 5 --rfid 5 --rmask 0x9 
+wrs_vlans --rvid 6 --rfid 6 --rmask 0xa
+wrs_vlans --rvid 7 --rfid 6 --rmask 0xc
+
+--check VLAN configuration
+wrs_vlans --list
+wrs_vlans --elist
+
+--VLAN and priority configuration
+--Vlan 5 has priority 7. VLAN 6 and 7 have priority 0
+wrs_vlans --ep 0 --emode 1 --evid 5 --eprio 7
+wrs_vlans --ep 1 --emode 1 --evid 6 --eprio 0
+wrs_vlans --ep 2 --emode 1 --evid 7 --eprio 0
+wrs_vlans --ep 3 --emode 1 
+wrs_vlans --rvid 5 --rfid 5 --rmask 0x9 --rprio 7
+wrs_vlans --rvid 6 --rfid 6 --rmask 0xa --rprio 0
+wrs_vlans --rvid 7 --rfid 6 --rmask 0xc --rprio 0
+
+/etc/init.d/ppsi.sh stop
+/etc/init.d/monit.sh stop
+
+
